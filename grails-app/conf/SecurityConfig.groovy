@@ -1,10 +1,14 @@
 security {
 
-	// see DefaultSecurityConfig.groovy for all settable/overridable properties
+  // see DefaultSecurityConfig.groovy for all settable/overridable properties
 
-	active = true
+  active = true
 
-	loginUserDomainClass = "Person"
-	authorityDomainClass = "Authority"
-	requestMapClass = "Requestmap"
+  loginUserDomainClass = "no.miles.bucket.User"
+  authorityDomainClass = "no.miles.bucket.Role"
+  
+  useControllerAnnotations = true
+  useRequestMapDomainClass = false
+
+
 }
