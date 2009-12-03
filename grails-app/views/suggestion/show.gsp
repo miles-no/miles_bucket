@@ -113,7 +113,7 @@
                     <span class="button"><g:actionSubmit class="edit" value="Edit" /></span>
                     <span class="button"><g:actionSubmit class="delete" onclick="return confirm('Are you sure?');" value="Delete" /></span>
                 </g:form>
-            </div>           
+            </div>
         </div>
     </body>
 </html>

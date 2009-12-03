@@ -34,4 +34,9 @@ class User {
 		passwd(blank: false)
 		enabled()
 	}
+
+  @Override
+  public String toString() {
+    return userRealName
+  }
 }
