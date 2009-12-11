@@ -32,9 +32,13 @@
         <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
           <td><g:link action="show" id="${suggestionInstance.id}">${fieldValue(bean: suggestionInstance, field: 'title')}</g:link></td>
           <td>${fieldValue(bean: suggestionInstance, field: 'responsible')}</td>
-          <td>${fieldValue(bean: suggestionInstance, field: 'targetDate')}</td>
+          <td>
+            <g:formatDate format="dd.MM.yy" value="${suggestionInstance.targetDate}"/>
+          </td>
           <td>${fieldValue(bean: suggestionInstance, field: 'createdBy')}</td>
-          <td>${fieldValue(bean: suggestionInstance, field: 'createdTime')}</td>
+          <td>
+            <g:formatDate format="dd.MM.yy" value="${suggestionInstance.createdTime}"/>
+          </td>
           <td>${fieldValue(bean: suggestionInstance, field: 'comments')}</td>
 
         </tr>

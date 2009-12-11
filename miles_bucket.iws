@@ -89,7 +89,7 @@
       <file leaf-file-name="list.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/suggestion/list.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="76" selection-start="1378" selection-end="1378" vertical-scroll-proportion="-9.379311">
+            <state line="41" column="90" selection-start="1695" selection-end="1695" vertical-scroll-proportion="-11.310345">
               <folding />
             </state>
           </provider>
@@ -104,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="create.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/suggestion/create.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="20" selection-start="2970" selection-end="2970" vertical-scroll-proportion="-14.344828">
+            <state line="63" column="13" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.46168223">
               <folding />
             </state>
           </provider>
@@ -122,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuggestionController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SuggestionController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/no/miles/bucket/SuggestionController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.028673835">
+            <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.45714286">
               <folding />
             </state>
           </provider>
@@ -637,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestion/list.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="76" selection-start="1378" selection-end="1378" vertical-scroll-proportion="-9.379311">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Users/kjerstibb/.grails/1.1.1/projects/miles_bucket/plugins/acegi-0.5.2/src/java/org/codehaus/groovy/grails/plugins/springsecurity/ldap/GrailsLdapUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -665,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestion/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="20" selection-start="2970" selection-end="2970" vertical-scroll-proportion="-14.344828">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/no/miles/bucket/UserService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0">
@@ -688,7 +674,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/no/miles/bucket/SuggestionController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.028673835">
+        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.45714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestion/list.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="90" selection-start="1695" selection-end="1695" vertical-scroll-proportion="-11.310345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/suggestion/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="13" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.46168223">
           <folding />
         </state>
       </provider>

@@ -63,15 +63,6 @@
           </td>
         </tr>
 
-        <%--<tr class="prop">
-          <td valign="top" class="name">
-            <label for="createdBy">Created By:</label>
-          </td>
-          <td valign="top" class="value ${hasErrors(bean: suggestionInstance, field: 'createdBy', 'errors')}">
-            <g:select optionKey="id" from="${no.miles.bucket.User.list()}" name="createdBy.id" value="${suggestionInstance?.createdBy?.id}"></g:select>
-          </td>
-        </tr>   --%>
-
         </tbody>
       </table>
     </div>
