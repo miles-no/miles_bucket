@@ -39,7 +39,9 @@
             <label for="description">Description:</label>
           </td>
           <td valign="top" class="value ${hasErrors(bean: suggestionInstance, field: 'description', 'errors')}">
-            <input type="text" id="description" name="description" value="${fieldValue(bean: suggestionInstance, field: 'description')}"/>
+            <textarea type="text" id="description" name="description">
+              ${suggestionInstance.description}
+            </textarea>
           </td>
         </tr>
 
@@ -61,14 +63,14 @@
           </td>
         </tr>
 
-        <tr class="prop">
+        <%--<tr class="prop">
           <td valign="top" class="name">
             <label for="createdBy">Created By:</label>
           </td>
           <td valign="top" class="value ${hasErrors(bean: suggestionInstance, field: 'createdBy', 'errors')}">
             <g:select optionKey="id" from="${no.miles.bucket.User.list()}" name="createdBy.id" value="${suggestionInstance?.createdBy?.id}"></g:select>
           </td>
-        </tr>
+        </tr>   --%>
 
         </tbody>
       </table>

@@ -1,6 +1,11 @@
 package no.miles.bucket
 
+import org.codehaus.groovy.grails.plugins.springsecurity.Secured
+
+@Secured(['ROLE_VOTER'])
 class SuggestionController {
+
+  def userService
 
   def index = { redirect(action: list, params: params) }
 
@@ -90,6 +95,7 @@ class SuggestionController {
     def suggestionInstance = new Suggestion(params)
     suggestionInstance.createdTime = new Date()
     suggestionInstance.status = Status.CREATE
+    suggestionInstance.createdBy = userService.getCurrentUser()
     if (!suggestionInstance.hasErrors() && suggestionInstance.save()) {
       flash.message = "Suggestion ${suggestionInstance.id} created"
       redirect(action: show, id: suggestionInstance.id)
