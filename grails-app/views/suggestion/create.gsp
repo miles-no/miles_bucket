@@ -47,7 +47,7 @@
 
         <tr class="prop">
           <td valign="top" class="name">
-            <label for="responsible">Responsible:</label>
+            <label for="responsible.id">Responsible:</label>
           </td>
           <td valign="top" class="value ${hasErrors(bean: suggestionInstance, field: 'responsible', 'errors')}">
             <g:select optionKey="id" from="${no.miles.bucket.User.list()}" name="responsible.id" value="${suggestionInstance?.responsible?.id}" noSelection="['null':'']"></g:select>
@@ -59,7 +59,7 @@
             <label for="targetDate">Target Date:</label>
           </td>
           <td valign="top" class="value ${hasErrors(bean: suggestionInstance, field: 'targetDate', 'errors')}">
-            <g:datePicker name="targetDate" value="${suggestionInstance?.targetDate}" precision="day" noSelection="['':'']"></g:datePicker>
+            <g:datePicker name="targetDate" value="${suggestionInstance?.targetDate}" precision="day"></g:datePicker>
           </td>
         </tr>
 

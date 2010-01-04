@@ -24,7 +24,8 @@
         <g:sortableColumn property="targetDate" title="Target Date"/>
         <th>Created By</th>
         <g:sortableColumn property="createdTime" title="Created Time"/>
-        <th>Comments</th>
+        <th>Vote count</th>
+        <th>Vote!</th>
       </tr>
       </thead>
       <tbody>
@@ -39,7 +40,8 @@
           <td>
             <g:formatDate format="dd.MM.yy" value="${suggestionInstance.createdTime}"/>
           </td>
-          <td>${fieldValue(bean: suggestionInstance, field: 'comments')}</td>
+          <td>${suggestionInstance.voteCount()}</td>
+          <td><g:link action="vote" id="${suggestionInstance.id}">Vote!</g:link></td>
 
         </tr>
       </g:each>

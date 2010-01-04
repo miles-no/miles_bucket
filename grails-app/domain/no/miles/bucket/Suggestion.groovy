@@ -1,4 +1,5 @@
 package no.miles.bucket
+
 class Suggestion {
 
     String title;
@@ -18,5 +19,13 @@ class Suggestion {
 
     static hasMany = [comments : Comment,
                       votes: Vote];
+
+  def voteCount() {
+    def count = 0
+    votes.each {
+      count += it.weight
+    }
+    count
+  }
 
 }

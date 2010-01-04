@@ -88,6 +88,7 @@ class SuggestionController {
   def create = {
     def suggestionInstance = new Suggestion()
     suggestionInstance.properties = params
+    suggestionInstance.description = ""
     return ['suggestionInstance': suggestionInstance]
   }
 
@@ -103,5 +104,24 @@ class SuggestionController {
     else {
       render(view: 'create', model: [suggestionInstance: suggestionInstance])
     }
+  }
+
+  def vote = {
+    def suggestionInstance = Suggestion.get(params.id)
+    if (suggestionInstance) {
+      if (userService.getCurrentUser().canVote(1)) {
+        suggestionInstance.addToVotes(userService.getCurrentUser().vote(1))
+        suggestionInstance.save()
+        flash.message = "Suggestion ${params.id} updated"
+      } else {
+        flash.message = "You have no more votes."
+      }
+      redirect(action: list)
+    }
+    else {
+      flash.message = "Suggestion not found with id ${params.id}"
+      redirect(action: list)
+    }
+
   }
 }
